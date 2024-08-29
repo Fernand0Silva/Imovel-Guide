@@ -73,7 +73,7 @@
                 <input type="number" placeholder="Digite seu CPF" class="cpf">
                 <input type="number" placeholder="Digite seu telefone" class="celular">
                 <input type="text" placeholder="Digite o assunto" class="assunto">
-                <button class="enviar">Enviar Mensagem</button>
+                <button class="enviar" onclick="enviar()">Enviar Mensagem</button>
             </div>
         </div> 
          
@@ -87,11 +87,14 @@
             </div>
        
         <div class="bloco4">
-            <img src="./imgs/Casa1.jpg" alt="" width="100%" height="100%">
-           <!-- <div class="imovel">
-                <p>Imovel Guide</p>
-            </div>-->
-            <button class="modal">Abrir Imagem no Modal</button>
+            <img src="./imgs/Casa1.jpg" alt="" width="100%" height="100%" id="myImg">
+
+            <div class="imagemModal" id="modal-container">
+                <button class="modal" id="modal">Abrir Imagem no Modal</button>
+                <span class="close"&times;></span>
+                <img class="modal-content" id="img01" src="" alt="">
+                <div id="caption"></div>
+            </div>
         </div>
         
       <div class="bloco5">
@@ -105,14 +108,18 @@
     </main>
     <footer>
         <ul class="fim">
-            <li><a href="">Contatos</a></li>
-            <li><a href="">Temos</a></li>
-            <li><a href="">Serviços</a></li>
-            <li><a href="">© Copyright 2024. Todos os direitos reservados.</a></li>
-            <li><a href="">Logo:Imóvel Guide</a></li>
+            <li></li>
+            <li>
+                <a href="">© Copyright 2024. Todos os direitos reservados.
+                 <img src="./imgs/logo.webp" alt="" width="100%" height="100%">
+                </a>
+            </li>
         </ul>
     </footer>
     <script>
+        function enviar(){
+            alert("Enviado");
+        }
         function menuShow(){
             let menuMobile = document.querySelector('.mobile-menu');
             if(menuMobile.classList.contains('open')){
@@ -123,6 +130,7 @@
                 document.querySelector('.icon').src = "./imgs/x.png";
             }
         }
+       
     </script>
 </body>
 </html>
