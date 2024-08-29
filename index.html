@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Imóvel Guide</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a class="logo" id="logo"><img src="./imgs/logo.webp" alt="ImóvelGuide" width="5%" height="5%">Imóvel Guide</a>
+            </div>
+            <div class="nav-list">
+                <ul class="list">
+                    <li class="nav-item"><a class="nav-link">Fórum</a></li>
+                    <li class="nav-item"><a class="nav-link">Conndominios</a></li>
+                    <li class="nav-item"><a class="nav-link">Guia</a></li>
+                    <li class="nav-item"><a class="nav-link">Artigos</a></li>
+                    <li class="nav-item"><a class="nav-link">Ferramentas</a></li>
+                    <li class="nav-item"><a class="nav-link">Cotar Imóvel</a></li>
+                    <li class="nav-item"><a class="nav-link">Planos</a></li>
+                    <li class="nav-item"><a class="nav-link">Entrar</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button class="" id="cadastra"><a href="#">Cadastre-se</a></button>
+            </div>    
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <img src="./imgs/menu.png" alt="" class="icon" height="34px" >
+                </button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul class="list">
+                <li class="nav-item"><a class="nav-link">Fórum</a></li>
+                <li class="nav-item"><a class="nav-link">Conndominios</a></li>
+                <li class="nav-item"><a class="nav-link">Guia</a></li>
+                <li class="nav-item"><a class="nav-link">Artigos</a></li>
+                <li class="nav-item"><a class="nav-link">Ferramentas</a></li>
+                <li class="nav-item"><a class="nav-link">Cotar Imóvel</a></li>
+                <li class="nav-item"><a class="nav-link">Planos</a></li>
+                <li class="nav-item"><a class="nav-link">Entrar</a></li>
+            </ul>
+            <div class="login-button">
+                <button class="" id=""><a href="#">Cadastre-se</a></button>
+            </div>    
+        </div>
+    </header>
+    <main>
+        <div class="pessoa1">
+            <img src="./imgs/pessoa.jpg" alt="pessoa" class="img1">
+            <div class="blocoPessoa1">
+                <h4 class="corretora">Nome Corretora</h4>
+                <p class="pontos3">3.000 pontos</p>
+                <a href="" class="telefone" id="tele">Ver Telefone</a>
+            </div><br><br>
+
+            <div class="blocopessoa2">
+                <img src="./imgs/pessoa.jpg" alt="pessoa" class="img2">
+                <div class="pessoa2">
+                    <h4 class="corretor">Nome Corretor</h4>
+                    <p class="pont">1.250 pontos</p>
+                    <a href="" class="telefone" id="tee">Ver Telefone</a>
+                </div>
+            </div>
+
+        </div>
+           <div class="mensagem">
+                <h2 class="titulo-mensagem">Mande uma Mensagem:</h2>
+                <input type="number" placeholder="Digite seu CPF" class="cpf">
+                <input type="number" placeholder="Digite seu telefone" class="celular">
+                <input type="text" placeholder="Digite o assunto" class="assunto">
+                <button class="enviar">Enviar Mensagem</button>
+            </div>
+        </div> 
+         
+            <div class="regra">
+                <h2>Regra de 3</h2>
+                <input class="caixa1" type="number">
+                <input class="caixa2" type="number">
+                <input class="caixa3" type="number">
+                <input class="caixa4" type="number">
+                <button class="calcular">Calcular</button>
+            </div>
+       
+        <div class="bloco4">
+            <img src="./imgs/Casa1.jpg" alt="" width="100%" height="100%">
+           <!-- <div class="imovel">
+                <p>Imovel Guide</p>
+            </div>-->
+            <button class="modal">Abrir Imagem no Modal</button>
+        </div>
+        
+      <div class="bloco5">
+            <img src="./imgs/Casa1.jpg" alt="" width="100%" height="100%">
+            <div class="imovel">
+                <p>Imovel Guide</p>
+            </div>
+            <button class="download">Download</button>
+        </div>
+        <div class="bloco6"><img src="./imgs/Casa1.jpg" alt="" width="100%" height="100%"></div>
+    </main>
+    <footer>
+        <ul class="fim">
+            <li><a href="">Contatos</a></li>
+            <li><a href="">Temos</a></li>
+            <li><a href="">Serviços</a></li>
+            <li><a href="">© Copyright 2024. Todos os direitos reservados.</a></li>
+            <li><a href="">Logo:Imóvel Guide</a></li>
+        </ul>
+    </footer>
+    <script>
+        function menuShow(){
+            let menuMobile = document.querySelector('.mobile-menu');
+            if(menuMobile.classList.contains('open')){
+                menuMobile.classList.remove('open');
+                document.querySelector('.icon').src = "./imgs/menu.png";
+            }else{
+                menuMobile.classList.add('open');
+                document.querySelector('.icon').src = "./imgs/x.png";
+            }
+        }
+    </script>
+</body>
+</html>

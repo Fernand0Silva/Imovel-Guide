@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header ul{
+    width: 100%;
+    background-color: #1b2653;
+    
+}
+.bloco{
+    color: white;
+    display: inline;
+    position: relative;
+    padding: 1px;
+    padding-left:20px ;
+}
+.container2{
+    display: inline;
+    position: relative;
+}
+#cadastra{
+    border-radius:10px;
+    border-color: aliceblue;
+    background-color: #1b2653;
+    position: relative;
+    left: 10px;
+    top: -5px;
+}
+.pessoa1{
+    background-color: red;
+    margin: 20px;
+    width: 250px;
+    height: 240px;
+    text-align: center;
+    position: relative;
+    left: 3%;
+}
+.mensagem{
+    background-color: aqua;
+    margin: 20px;
+    width: 250px;
+    height: 240px;
+    text-align: center;
+    position: relative;
+    left: 40%;
+    top: -260px;
+
+}
+.regra{
+    background-color: blue;
+    margin: 20px;
+    width: 250px;
+    height: 240px;
+    text-align: center;
+    position: relative;
+    left: 60%;
+    top: -520px;
+}
+.bloco4{
+    background-color: red;
+    margin: 20px;
+    width: 250px;
+    height: 240px;
+    text-align: center;
+    position: relative;
+    left: 20%;
+    top: -500px;
+}
+.bloco5{
+    background-color: blue;
+    margin: 20px;
+    width: 250px;
+    height: 240px;
+    text-align: center;
+    position: relative;
+    left: 40%;
+    top: -760px; 
+}
+.bloco6{
+    background-color: blueviolet;
+    margin: 20px;
+    width: 250px;
+    height: 240px;
+    text-align: center;
+    position: relative;
+    left: 60%;
+    top: -1020px; 
+}
+.fim{
+    background-color: #1b2653;
+    padding: 0;
+    text-align: left;
+}
+.fim li{
+    list-style: none;
+    display: inline-block;
+}
+.fim a{
+    /*background-color: aliceblue;*/
+    display: block;
+    text-decoration: none;
+    padding: 16px;
+}
+.fim a:houver{
+    background-color: red;
+    color: aquamarine;
+}
