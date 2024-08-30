@@ -1,3 +1,8 @@
+@charset "UTF-8";
+
+@media screen and (min-width:992px){
+    
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +10,7 @@
 body{
     margin: 0;
     padding: 0;
+    
 }
 header ul{
     width: 100%;
@@ -31,64 +37,122 @@ header ul{
     top: -5px;
 }
 .pessoa1{
-    background-color: red;
     margin: 20px;
-    width: 250px;
-    height: 240px;
+    width: 23rem;
+    height: 23rem;
     text-align: center;
     position: relative;
-    left: 3%;
+    left: 3rem;
+}
+.img1{
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    right: 20%;
+    top: 13px;
+    border-radius: 4%;
+    border: 2px solid rgba(0, 0, 0, 0.774);
+    margin-top: -7px;
+    margin: 0 auto;
+}
+.img2{
+    width: 10rem;
+    height: 10rem;
+    position: relative;
+    right: 10rem;
+    top: -9rem;
+    border-radius: 4%;
+    border: 2px solid rgba(0, 0, 0, 0.774);
+    margin-top: -7px;
+    margin: 0 auto;
+}
+.blocoPessoa1{
+    position: relative;
+    top: -8rem;
+    left: 20%;
+}
+.pessoa2{
+    position: relative;
+    top: -18rem;
+    left: -3%;
 }
 .mensagem{
-    background-color: aqua;
     margin: 20px;
-    width: 250px;
-    height: 240px;
+    width: 23rem;
+    height: 23rem;
     text-align: center;
     position: relative;
-    left: 40%;
-    top: -260px;
+    left: 35%;
+    top: -24.3rem;
 
 }
 .regra{
-    background-color: blue;
     margin: 20px;
-    width: 250px;
-    height: 240px;
+    width: 23rem;
+    height: 23rem;
     text-align: center;
     position: relative;
-    left: 60%;
-    top: -520px;
+    left: 56rem;
+    top: -48.7rem;
+}
+.caixa1{
+ 
+    position: relative;
+    top: 1rem;
+    left: -1rem;
+}
+.caixa2{
+
+    position: relative;
+    top: 1rem;
+    left: -1rem;
+}
+.caixa3{
+  
+    position: relative;
+    top: -1rem;
+    left: 4.8rem;
+}
+.caixa4{
+   
+    position: relative;
+    top: -7rem;
+    left: -0.7rem;
+}
+.calcular{
+    background-color: #fe6613;
+    position: relative;
+    top: -5rem;
+    left: -6rem;
 }
 .bloco4{
-    background-color: red;
     margin: 20px;
-    width: 250px;
-    height: 240px;
+    width: 23rem;
+    height: 23rem;
     text-align: center;
     position: relative;
-    left: 20%;
-    top: -500px;
+    left: 3.5%;
+    top: -48rem;
 }
 .bloco5{
     background-color: blue;
     margin: 20px;
-    width: 250px;
-    height: 240px;
+    width: 23rem;
+    height: 23rem;
     text-align: center;
     position: relative;
-    left: 40%;
-    top: -760px; 
+    left: 35%;
+    top: -72.3rem; 
 }
 .bloco6{
     background-color: blueviolet;
     margin: 20px;
-    width: 250px;
-    height: 240px;
+    width: 23rem;
+    height: 23rem;
     text-align: center;
     position: relative;
-    left: 60%;
-    top: -1020px; 
+    left: 66.6%;
+    top: -96.6rem; 
 }
 .fim{
     background-color: #1b2653;
@@ -105,7 +169,31 @@ header ul{
     text-decoration: none;
     padding: 16px;
 }
-.fim a:houver{
-    background-color: red;
-    color: aquamarine;
+.fim a:hover{
+}
+}
+.img-fim{
+    width: 10%;
+    height: 10%;
+    position: relative;
+    left: 67rem;
+    top: -20px;
+}
+.copy{
+    position: relative; 
+    top: 40px;
+    right:-53%;
+}
+.texto-fim{
+    color: aliceblue;
+    display: inline;
+    
+}
+.para{
+    position: relative;
+    color: aliceblue;
+    right: 50%;
+    display: inline;
+    justify-content: space-between;
+
 }

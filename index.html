@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pc.css">
     <title>Imóvel Guide</title>
 </head>
 <body>
     <header>
         <nav class="nav-bar">
             <div class="logo">
-                <a class="logo" id="logo"><img src="./imgs/logo.webp" alt="ImóvelGuide" width="5%" height="5%">Imóvel Guide</a>
+                <a class="logo" id="logo"><img src="./imgs/logo.webp" alt="ImóvelGuide" width="10%" height="10%">Imóvel Guide</a>
             </div>
             <div class="nav-list">
                 <ul class="list">
@@ -24,7 +25,7 @@
                     <li class="nav-item"><a class="nav-link">Entrar</a></li>
                 </ul>
             </div>
-            <div class="login-button">
+            <div class="login-button" >
                 <button class="" id="cadastra"><a href="#">Cadastre-se</a></button>
             </div>    
             <div class="mobile-menu-icon">
@@ -79,11 +80,11 @@
          
             <div class="regra">
                 <h2>Regra de 3</h2>
-                <input class="caixa1" type="number">
-                <input class="caixa2" type="number">
-                <input class="caixa3" type="number">
-                <input class="caixa4" type="number">
-                <button class="calcular">Calcular</button>
+                <input class="caixa1" id="n1" type="number" placeholder="Digite o valor A">
+                <input class="caixa2" id="n2" type="number" placeholder="Digite o valor B">
+                <input class="caixa3" id="n3" type="number" placeholder="Digite o valor C">
+                <div class="caixa4" id="res"></div>
+                <button class="calcular" id="calcular" onclick="calcular()">Calcular</button>
             </div>
        
         <div class="bloco4">
@@ -107,11 +108,15 @@
         <div class="bloco6"><img src="./imgs/Casa1.jpg" alt="" width="100%" height="100%"></div>
     </main>
     <footer>
-        <ul class="fim">
-            <li></li>
-            <li>
-                <a href="">© Copyright 2024. Todos os direitos reservados.
-                 <img src="./imgs/logo.webp" alt="" width="100%" height="100%">
+       <ul class="fim">
+            <li class="li-tudo">
+                <div class="copy">
+                    <p class="para">Termos</p>
+                    <p class="para">Contatos</p>
+                    <p class="para">Sobre</p>
+                    <a  class="final" href="">© Copyright 2024. Todos os direitos reservados.
+                </div>
+                 <img src="./imgs/logo.webp" alt="" class="img-fim">
                 </a>
             </li>
         </ul>
@@ -130,7 +135,19 @@
                 document.querySelector('.icon').src = "./imgs/x.png";
             }
         }
-       
+        function calcular() {
+    let n1 = parseInt(document.getElementById('n1').value);
+    let n2 = parseInt(document.getElementById('n2').value);
+    let n3 = parseInt(document.getElementById('n3').value);
+    
+    if (n1 && n2 && n3) {
+        const resultado = (n1 * n3) / n2;
+
+        document.getElementById('res').textContent = resultado.toFixed(0);
+    } else {
+        alert("Por favor, preencha todos os campos.");
+    }
+}   
     </script>
 </body>
 </html>
